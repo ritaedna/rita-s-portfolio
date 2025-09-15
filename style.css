@@ -1,0 +1,226 @@
+/* === Reset and Base Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 60px;
+}
+
+/* === Header === */
+header {
+  background-color: #007acc;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 4px solid #005fa3;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+nav ul {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #005fa3;
+}
+
+/* === Section Titles === */
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #007acc;
+  margin: 60px 0 30px;
+  border-bottom: 3px solid #007acc;
+  display: inline-block;
+}
+
+/* === About Me === */
+.about-me {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.about-me h3 {
+  font-size: 1.5rem;
+  color: #007acc;
+  margin-bottom: 10px;
+}
+
+.about-me p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* === Projects Section === */
+.project-card {
+  max-width: 800px;
+  background-color: #fff;
+  margin: 20px auto;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  font-size: 1.4rem;
+  color: #007acc;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.project-link {
+  display: inline-block;
+  background-color: #007acc;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #005fa3;
+}
+
+/* === Experience Section === */
+.experience-entry {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  background-color: #f5f7fa;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.experience-entry h3 {
+  font-size: 1.4rem;
+  color: #007acc;
+  margin-bottom: 5px;
+}
+
+.experience-entry h4 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.exp-duration {
+  float: right;
+  font-size: 0.95rem;
+  color: #777;
+}
+
+.experience-entry ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.experience-entry ul li {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* === Contact Section === */
+#contact {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+#contact p {
+  margin: 12px 0;
+  font-size: 1rem;
+}
+
+#contact a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* === Footer === */
+footer {
+  background-color: #007acc;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* === Responsive Layout === */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-card,
+  .experience-entry,
+  .about-me,
+  #contact {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .exp-duration {
+    float: none;
+    display: block;
+    margin-top: 5px;
+  }
+}
+
